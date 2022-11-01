@@ -1,0 +1,41 @@
+<script>
+  /*Ejercicio 1:
+A partir del siguiente array que se proporciona: var valores = [verdadero, false, 2, "hola",
+"mundo, char, 3];
+1. Determinar cuál de los elementos de texto es mayor, es decir el que contenga más
+letras.
+2. Imprimir los elementos de menor a mayor cantidad de letras.
+3. Determinar el resultado de las cuatro operaciones matemáticas realizadas con los dos
+elementos numéricos.*/
+
+  var verdadero, char;
+  var valores = [verdadero, false, 2, "hola","mundo", 3, char];
+  numerosLista = [];
+  listaPalabra = [];
+  for (let i = 0; i < valores.length; i++) {
+    if (typeof valores[i] === "string") {
+      listaPalabra.push(valores[i]);
+    }
+  }
+  palabraMasLarga = 0;
+  for (let i = 0; i < listaPalabra.length; i++) {
+    if (listaPalabra[i].length > 0) palabraMasLarga = listaPalabra[i];
+  }
+  for(let i=0;i<valores.length;i++){
+    if(typeof valores[i]==="number"){
+        numerosLista.push(valores[i]);
+
+    }
+  }
+  suma=0
+  for(let i=0;i<numerosLista.length;i++){
+    suma+=numerosLista[i];
+  }
+  
+  
+  document.write("los valores del array ordenados de menor a mayor son :" +listaPalabra.sort(function(a,b){return a.length-b.length})+"<br>")
+  document.write("la palabra mas larga es :" + palabraMasLarga+"<br>");
+  document.write("los numeros de la lista son :" +numerosLista+"<br>");
+  document.write("la suma de los numeros es: "+suma +"<br>");
+
+</script>

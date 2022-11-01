@@ -1,0 +1,15 @@
+<script>
+  /*
+    Ejercicio 7:
+Escribir una función que reciba un texto y lo devuelva al revés.
+*/
+  var palabra = prompt("ingrese un texto");
+  var nuevaPalabra = " ";
+  function invertirPalabra(palabra) {
+    for (var i = palabra.length - 1; i >= 0; i--) {
+      nuevaPalabra += palabra[i];
+    }
+    return nuevaPalabra;
+  }
+  document.write("la palabra ivertida es :" + invertirPalabra(palabra))
+</script>

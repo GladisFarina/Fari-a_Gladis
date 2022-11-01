@@ -1,0 +1,26 @@
+<script>
+/*
+Ejercicio 5:
+Crear una función que muestre información sobre una cadena de texto que se le pasa como
+argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está
+formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
+
+*/
+var palabra =prompt("ingrese una frase")
+resultado=cadena(palabra)
+
+function cadena(palabra){
+
+        if(palabra==palabra.toUpperCase()){
+            return "mayuscula";
+        }
+        else if (palabra==palabra.toLowerCase()){
+            return "minuscula";
+        }
+        else{
+            return "entre mayusculas y minusculas";
+        }
+}
+alert("la frase: " + palabra +" esta escrito en " + resultado);
+
+</script>
