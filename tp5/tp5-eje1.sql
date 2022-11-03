@@ -1,0 +1,13 @@
+SELECT * FROM sistema.empleados;
+select * from apellido;
+select apellido from empleados;
+SELECT DISTINCT APELLIDO FROM EMPLEADOS;
+SELECT * FROM EMPLEADOS;
+SELECT NOMBRE, APELLIDO FROM EMPLEADOS;
+SELECT CUIL_CUIT FROM EMPLEADOS;
+SELECT  upper(concat_ws('',NOMBRE,APELLIDO)) AS NOMBRE_COMPLETO from empleados;
+SELECT  lower(concat_ws('',NOMBRE,APELLIDO)) AS NOMBRE_COMPLETO from empleados;
+select nombre from sistema.departamentos order by presupuesto asc;
+select nombre from sistema.departamentos order by nombre asc;
+select nombre from sistema.departamentos order by nombre desc;
+select apellido,nombre from sistema.empleados order by apellido asc;
